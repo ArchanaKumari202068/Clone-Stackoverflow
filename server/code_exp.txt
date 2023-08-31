@@ -1,0 +1,4 @@
+reducers will used to store the data
+
+actions is used to dispatched any update or modify in the particular data
+which is used by the reducers

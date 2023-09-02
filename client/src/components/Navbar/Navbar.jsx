@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
-import { UseSelector,Dispatch, useDispatch } from 'react-redux'
-
+import { useSelector,useDispatch} from 'react-redux'
 import logo from '../../assest/logo.png'
 import search from '../../assest/search-solid.svg'
 import Avatar from '../../components/Avatar/Avatar'
@@ -13,9 +12,11 @@ const Navbar = () => {
     const dispatch =useDispatch()
     //retrieve the stored user profile data from 
     //localStorage using the localStorage.getItem method and then parse it using JSON.parse.
-
-    var User = JSON.parse(localStorage.getItem('Profile'))
-
+ 
+    // var User = JSON.parse(localStorage.getItem('Profile'))
+    //replace the above line
+    //using useSelector hook we can access the user to use data from anywhere to application
+    var User = useSelector((state)=>(state.currentUserReducer))
     useEffect(()=>{
         dispatch(setCurrentUser(JSON.parse(localStorage.getItem('Profile'))))
 

@@ -1,4 +1,4 @@
-const currentUserReducer=s(tate=null,action) =>{
+const currentUserReducer=(state=null,action) => {
     switch(action.type){
         case 'FETCH_CURRENT_USER':
             return action.payload;
@@ -6,3 +6,4 @@ const currentUserReducer=s(tate=null,action) =>{
             return state
     }
 }
+export default currentUserReducer;

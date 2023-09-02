@@ -4,6 +4,7 @@ import mongoose from 'mongoose'
 //
 import cors from 'cors'
 import userRoutes from './routes/users.js'
+import questionRoutes from './routes/Questions.js'
 
 
 // we create our server
@@ -16,6 +17,7 @@ app.get('/',(req,res) =>{
     res.send("This is a stack overflow clone API")
 })
 app.use('/user',userRoutes)
+app.use('/questions',questionRoutes)
 const PORT = process.env.PORT || 5000
 
 const CONNECTION_URL = "mongodb+srv://archanakumari202068:202068@stackoverflow-clone.rhh4ud3.mongodb.net/?retryWrites=true&w=majority"

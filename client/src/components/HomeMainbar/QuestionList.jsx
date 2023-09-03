@@ -5,9 +5,11 @@ const QuestionList = ({ questionList }) => {
   // console.log(questionList)
   return (
     <>
-      {questionList?.map((question)=>{
-        return <Questions question={question} />
-      })}
+      {
+        questionList.map((question)=>(
+          <Questions question={question} key={question._id}/>
+        ))
+      }
       
     </>
   );

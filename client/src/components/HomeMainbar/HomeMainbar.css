@@ -1,5 +1,6 @@
 .main-bar{
-    width:calc( 100% -300px -24px); 
+    /* width:calc( 100% -300px -24px);  */
+    width: 60%;
     float: left;
     margin:25px 0px;
     padding: 0;
@@ -28,24 +29,29 @@
     min-height: 80px;
     width: 100%;
     display: flex;
+    justify-content: space-between;
     
     align-items: center;
     background-color: #fdf7e2;
+  
     border-bottom: solid 1px #edeff0;
 
 }
-.display-question-conatiner .display-votes-ans{
-  
-    padding:20px;
+ .display-votes-ans{
+   
+    justify-content: space-between;
+   
+    padding:10px;
 }
 .display-question-conatiner .display-votes-ans p{
  
-    margin: 0%;
+    margin: 20px;
     text-align: center;
 }
 .display-question-details{
     flex-grow: 1;
-    padding: 0px 20px;
+    padding: 10px;
+    margin: 0%;
 }
 .question-title-link{
     text-decoration: none;

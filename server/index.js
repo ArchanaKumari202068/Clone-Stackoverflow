@@ -5,7 +5,7 @@ import mongoose from 'mongoose'
 import cors from 'cors'
 import userRoutes from './routes/users.js'
 import questionRoutes from './routes/Questions.js'
-
+import answerRoutes from './routes/Answers.js'
 
 // we create our server
 const app= express();
@@ -18,6 +18,8 @@ app.get('/',(req,res) =>{
 })
 app.use('/user',userRoutes)
 app.use('/questions',questionRoutes)
+//to post answer
+app.use('/answer',answerRoutes)
 const PORT = process.env.PORT || 5000
 
 const CONNECTION_URL = "mongodb+srv://archanakumari202068:202068@stackoverflow-clone.rhh4ud3.mongodb.net/?retryWrites=true&w=majority"

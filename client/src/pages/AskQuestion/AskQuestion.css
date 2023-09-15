@@ -10,7 +10,8 @@
 
 }
 .ask-ques-container h1{
-    padding: 80px 0px 20px 0px;
+    padding: 80px 0px 20px ;
+    margin-bottom: -50px;
 }
 .ask-ques-container form .ask-form-conatiner{
     padding: 20px;
@@ -46,4 +47,15 @@
 }
 review-btn:hover{
     background-color: #0086d8;
+}
+#ask-ques-title{
+    width: 90%;
+}
+#ask-ques-body{
+    width: 90%;
+    height: 100px;
+
+}
+#ask-ques-tags{
+    width: 90%;
 }

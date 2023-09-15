@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 import {BrowserRouter as Router } from 'react-router-dom';
 import AllRoutes from './AllRoutes';
 import  {fetchAllQuestions} from './actions/question'
+import { fetchAllUsers } from './actions/users';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   //whenever our application i live useeFFect statement will run
   useEffect(()=>{
     dispatch(fetchAllQuestions())
+    dispatch(fetchAllUsers())
   },[dispatch])
 
 

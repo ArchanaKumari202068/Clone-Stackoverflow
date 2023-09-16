@@ -9,7 +9,8 @@ const Avatar = ({children, backgroundColor,px,py,color,borderRadius,fontSize,cur
     borderRadius,
     fontSize,
     textAlign:"center",
-    cursor:cursor || null
+    cursor:cursor || null,
+    textDecoration:"none"
   }
 
 

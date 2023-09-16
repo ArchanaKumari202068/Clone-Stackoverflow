@@ -25,7 +25,7 @@ const DisplayAnswer = ({question,handleShare}) => {
                             <button type='button'onClick={handleShare}>Share</button>
                             {// if the login id match with the question id then they r able to delete
                              
-                                User?. _id === ans?.userId && (
+                                User?.result. _id === ans?.userId && (
                                     <button type='button' onClick={() =>handleDelete(ans._id,question.noOfAnswers)}>Delete</button>
                                 )
                                 
